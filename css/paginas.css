@@ -1,3 +1,6 @@
+
+/*
+
 *{
     margin: 0%;
     
@@ -30,7 +33,7 @@ header{
         animation-iteration-count: infinite;
     }
 /* cambio de color*/
-    @keyframes changeColor{
+   /* @keyframes changeColor{
         from{
             background-color: orange;   
              }
@@ -38,7 +41,7 @@ header{
             background-color: red;
             }
     }
-    
+  /*  
 .container2 {
     width: 60%;
     margin: 0% auto;
@@ -64,13 +67,13 @@ footer{
     font-size: 2em;  
     width: 100%;
     /*clear: both;*/
-    float: left;
+  /*  float: left;
     margin-top: 20px;
     box-sizing: border-box;
     padding: 20px;
     background: white;
  }
-
+/*
  @media screen and (max-width: 768px) {
     
     header{
@@ -92,4 +95,140 @@ footer{
         padding: 5px;
         font-size: 0.8rem;    
     }
+}
+*/
+
+
+*{
+    margin: 0%;   
+}
+header{
+    background-color:lightblue;
+    color: black;
+    font-size: 2em;
+    font-family: 'Bonheur Royale', cursive;
+    width: 100%;
+    padding: 10px;
+}
+
+.botoncito{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 10px;
+    }
+
+#contact01{
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        padding: 6px;
+        border-radius: 10px;
+        animation-name: changeColor;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+/* cambio de color*/
+    @keyframes changeColor{
+        from{
+            background-color: orange;   
+             }
+        to  {
+            background-color: red;
+            }
+    }
+    
+.container2 {
+    width: 80%;
+    margin: 0% auto;
+    overflow: hidden;
+    max-width: 1500px;
+}
+
+.main{
+    width: 100%;
+    background: orange;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+
+
+}
+.main img {
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    font-size: 1.5em;  
+    width: 100%;
+    /*clear: both;*/
+    float: left;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    background: white;
+ }
+
+
+ @media screen and (min-width: 600px){
+
+    header{
+        background-color: lightseagreen;
+        color: black;
+        font-size: 2.5em;
+    }
+    
+    .botoncito{
+        padding: 8px;
+        }
+    
+    #contact01{
+            padding: 8px;
+        }
+
+    .container2 {
+        width: 60%;
+        margin: 0% auto;
+        overflow: hidden;
+        max-width: 1500px;
+    }       
+    
+    footer{
+        font-size: 1.5em;  
+     }
+
+ }
+
+@media screen and (min-width: 768px){
+
+
+    header{
+        background-color: lightgreen;
+        color: black;
+        font-size: 3em;
+    }
+    
+    .botoncito{
+        padding: 10px;
+        }
+    
+    #contact01{
+            padding: 10px;
+        }
+
+    .container2 {
+        width: 70%;
+        margin: 0% auto;
+        overflow: hidden;
+        max-width: 1500px;
+    }
+  
+    footer{
+        font-size: 2em;  
+        width: 100%;
+        padding: 20px;
+     }
+
 }

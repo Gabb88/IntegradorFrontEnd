@@ -9,7 +9,7 @@ h1{
 header{
     background-color: white;
     color: black;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Bonheur Royale', cursive;
     width: 100%;
     }
@@ -47,9 +47,10 @@ header{
 /*-------grilla de css--------*/
 
 .grid-container{
+    background-color: blue;
     display: grid;
     grid-template-areas: 'grid-item grid-item grid-item grid-item';
-    gap: 50px;
+    gap: 70px;  
     padding: 40px;
     width: 80%;
     max-width: 1500px;
@@ -70,10 +71,13 @@ header{
     overflow: hidden;
     background-size: cover;
     background-position: center center; 
+
+    width: 170px;
+    height: 150px;
     }
+    
 .galeria_titulo{
     position: absolute;
-    /*bottom: 0;*/ 
     color: black;    
     }
 
@@ -101,7 +105,7 @@ footer{
         background: white;   
      }
 
-    @media screen and (max-width: 768px)
+    /*@media screen and (max-width: 768px)
 {
     *{
         width: 100%;
@@ -135,3 +139,78 @@ footer{
 
 
 }
+*/
+
+
+
+    @media screen  and (max-width: 600px)
+{
+    *{
+        width: 100%;
+        }
+    header{
+        font-size: 2em;     
+        padding: 5px;
+    }
+    .myDiv
+    { 
+        width: 60%;
+    }
+    .grid-container {
+        width: 70%;
+        gap: 2px;
+        padding: 10px;
+        margin: 0% auto;
+        background-color: brown;
+    }
+    
+    .grid-item img{
+
+        width: 25px;
+        height: 5px;
+        border-radius: 70%;    
+        min-height: 5px;
+    }
+
+    .galeria_titulo{
+        display: none;
+    }
+
+
+}
+
+@media screen  and (max-width: 768px)
+
+{
+    *{
+        width: auto;
+        height: auto;
+    }
+    header{
+        font-size: 3em;     
+        padding: 5px;
+        }
+
+    .myDiv
+    { 
+        width: 60%;
+    }
+    .grid-container {
+        width: 80%;
+        gap: 25px;
+        padding: 40px;
+        margin: 0% auto;
+        background-color: blueviolet;
+    }
+    
+    .grid-item img{
+
+        width: 70px;
+        height: 50px;
+        border-radius: 70%;    
+        min-height: 80px;
+    }
+    
+
+}
+
