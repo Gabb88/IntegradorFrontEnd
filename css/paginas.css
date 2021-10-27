@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    
+}
+header{
+    background-color:lightblue;
+    color: black;
+    font-size: 3em;
+    font-family: 'Bonheur Royale', cursive;
+    width: 100%;
+    padding: 20px;
+}
+
+.botoncito{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    }
+
+#contact01{
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10px;
+        animation-name: changeColor;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+/* cambio de color*/
+    @keyframes changeColor{
+        from{
+            background-color: orange;   
+             }
+        to  {
+            background-color: red;
+            }
+    }
+    
+.container2 {
+    width: 60%;
+    margin: 0% auto;
+    overflow: hidden;
+    max-width: 1500px;
+}
+
+.main{
+    width: 100%;
+    background: orange;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+
+
+}
+.main img {
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    font-size: 2em;  
+    width: 100%;
+    /*clear: both;*/
+    float: left;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: white;
+ }
+
+ @media screen and (max-width: 768px) {
+    
+    header{
+        font-size: 2em;
+        padding: 5px;
+    }
+    .conteiner2{
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+        padding: 10px;  
+    }
+    .botoncito{
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+    #contact01{
+        padding: 5px;
+        font-size: 0.8rem;    
+    }
+}
