@@ -1,6 +1,7 @@
 *{
-    width: 100%;
-    margin: 0%;
+    width: auto;
+    height: auto;
+    margin: auto;
 }
 h1{
     text-align: center;
@@ -54,24 +55,24 @@ header{
     gap: 10px;
     padding: 20px;
     margin: 0% auto;
-    background-color: brown;
+    background-position: left center;
 }
 
 .grid-item img{
 
-    width: 70px;
-    height: 55px;
+    width: 55px;
+    height: 50px;
     border-radius: 70%;    
-    min-height: 20px;
+    min-height: 10px;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
     background-size: cover;
-    background-position: center center; 
+    background-position: left center;
     border: solid 2px black;
-
+    
 }
 
 .galeria_titulo{
@@ -101,10 +102,7 @@ footer{
      }
 
 @media screen and (min-width: 600px){
-    *{
-        width: auto;
-        height: auto;
-    }
+
 
     .botoncito{
         padding: 8px;
@@ -113,28 +111,27 @@ footer{
         padding: 8px;
     }
     .grid-container{
-        background-color: blue;
-        gap: 25px;  
-        padding: 25px;
+        gap: 20px;  
+        padding: 20px;
         width: 80%;
         max-width: 1500px;
         margin: 0% auto;
         }
     .grid-item img{      
         margin: 0% auto;
-        width: 90px;
-        height: 70px;
+        width: 95px;
+        height: 85px;
         }
     .galeria_titulo{
-        display: contents;
+        display: block;
         position: absolute;
-        color: black;    
-            }
+        color: black;  
+        font-size: medium; 
+    }
 
-    .myDiv
-            { 
-                width: 60%;
-            }
+    .myDiv{ 
+        width: 80%;
+        }
 }
 
 @media screen and (min-width: 768px){
@@ -144,27 +141,23 @@ footer{
     padding: 5px;
    }
    .grid-container{
-        background-color: violet;
-        gap: 50px;  
-        padding: 30px;
-        width: 80%;
-        max-width: 1500px;
-        margin: 0% auto;
+        gap: 25px;  
+        padding: 25px;
+        width: 90%;
         }
     .grid-item img{
-        margin: 0% auto;
         border-radius: 50%;
-        border: solid 2px black;
         min-height: 150px;
-        width: 170px;
-        height: 150px;
+        width: 140px;
+        height: 95px;
 
         }
-        .myDiv
-        { 
-            width: 80%;
+    .galeria_titulo{
+        font-size:x-large;
+    }
+    
+    .myDiv{ 
+        width: 80%;
         }
-
-
 
 }
